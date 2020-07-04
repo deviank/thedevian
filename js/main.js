@@ -1,5 +1,6 @@
 var countDownDate = new Date("July 29, 2020 00:00:00").getTime();
 
+// Set the date we're counting down to
 var x = setInterval(function () {
   var now = new Date().getTime();
   var distance = countDownDate - now;
@@ -12,6 +13,6 @@ var x = setInterval(function () {
     days + "d  " + hours + "h  " + minutes + "m " + seconds + "s ";
   if (distance < 0) {
     clearInterval(x);
-    document.getElementById("LaunchDate").innerHTML = "days";
+    document.getElementById("LaunchDate").innerHTML = "Awww Shucks!!";
   }
 }, 1000);
