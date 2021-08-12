@@ -1,4 +1,4 @@
-var countDownDate = new Date("Novemeber 29, 2020 00:00:00").getTime();
+var countDownDate = new Date("September 29, 2021 00:00:00").getTime();
 
 // Set the date we're counting down to
 var x = setInterval(function () {
@@ -13,6 +13,6 @@ var x = setInterval(function () {
     days + "d  " + hours + "h  " + minutes + "m " + seconds + "s ";
   if (distance < 0) {
     clearInterval(x);
-    document.getElementById("LaunchDate").innerHTML = "Patience";
+    document.getElementById("LaunchDate").innerHTML = "Please, one more second";
   }
 }, 1000);
